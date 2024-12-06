@@ -1,0 +1,44 @@
+.page-header {
+  padding: 24px 0;
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  &__logo-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__text-wrapper {
+    @include col(xs, 12, $grid-columns, 16px);
+    @include col(md, 9);
+    @include col(xl, 6, $grid-columns, 32px);
+    color: $white;
+  }
+
+  &__title {
+    margin-bottom: 16px;
+  }
+
+  &__link-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 16px;
+    margin-top: 32px;
+
+    & > .btn {
+      flex: 1 1 100%;
+
+      @media (min-width: $screen-md) {
+        flex: 0 0 auto;
+      }
+    }
+  }
+}
