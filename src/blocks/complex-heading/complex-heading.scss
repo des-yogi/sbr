@@ -1,0 +1,19 @@
+.complex-heading {
+  text-align: center;
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__title {
+    text-transform: uppercase;
+    color: $headline-color;
+  }
+
+  &__subtitle {
+    margin-bottom: 16px;
+    transform: translateY(-18px);
+  }
+
+  &__intro {
+
+  }
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="en" prefix="og: https://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+  <title>Home page</title>
+  @@include('_include/page_head.html')
+</head>
+
+<body>
+<noscript>You have JavaScript disabled. We apologize, but this makes it difficult to use this site.</noscript>
+
+  <div class="page__inner">
+
+    <div class="page__content">
+      @@include('blocks/page-header/page-header.html')
+
+      <main>
+
+        <section class="container  accecibility">
+          @@include('blocks/complex-heading/complex-heading.html', {
+            "title": "Accessibility",
+            "subtitle": "What is accessible bathrooms",
+            "intro": "An accessible bathroom is a space that is designed to accommodate the needs of people with disabilities or reduced mobility. Such bathrooms are equipped with the following elements:"
+          })
+        </section>
+
+      </main>
+
+    </div>
+
+    <div class="page__footer-wrapper">
+      @@include('blocks/page-footer/page-footer.html')
+    </div>
+
+  </div>
+
+  @@include('_include/page_bottom.html')
+
+</body>
+</html>
