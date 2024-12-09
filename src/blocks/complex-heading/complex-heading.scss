@@ -1,4 +1,5 @@
 .complex-heading {
+  margin-bottom: 40px;
   text-align: center;
 
   $block-name:                &; // #{$block-name}__element
@@ -9,11 +10,26 @@
   }
 
   &__subtitle {
+    margin-top: -18px;
     margin-bottom: 16px;
-    transform: translateY(-18px);
+
+    @media (min-width: $screen-xl) {
+      margin-top: -26px;
+    }
+
+    &:empty {
+      display: none;
+    }
   }
 
   &__intro {
+    margin-top: 0;
+    font-size: $font-size-lg;
+    font-weight: 500;
+    letter-spacing: 0.324px;
 
+    &:empty {
+      display: none;
+    }
   }
 }

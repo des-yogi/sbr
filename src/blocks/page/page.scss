@@ -357,6 +357,55 @@ a {
   }
 }
 
+// Swiper Controls
+.swiper {
+
+  &__controls {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+  }
+}
+
+.swiper-wrapper,
+.swiper-slide {
+  box-sizing: border-box;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  position: static;
+
+  &::after {
+    display: none;
+  }
+}
+
+.swiper-button-disabled {
+  color: $gray-500;
+  border-color: $gray-500;
+  background-color: transparent;
+  opacity: 1 !important;
+}
+
+.swiper-pagination {
+  position: static;
+  width: auto !important;
+}
+
+.swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  opacity: 1;
+  background-color: $blue-400;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: $main-color;
+}
+
 /*
 @include col(xs, 12, $grid-columns, 16px);
 @include col(md, 6);

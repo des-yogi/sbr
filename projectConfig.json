@@ -28,7 +28,8 @@
     "stars": [],
     "free-quote": [],
     "brand-slider": [],
-    "copyrights": []
+    "copyrights": [],
+    "before-after": []
   },
   "addCssBefore": [
     "../../node_modules/bootstrap/scss/_functions",

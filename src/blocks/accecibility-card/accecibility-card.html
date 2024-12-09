@@ -1,5 +1,22 @@
 <!--DEV
-@ @include('blocks/accecibility-card/accecibility-card.html')
+@ @include('blocks/accecibility-card/accecibility-card.html', {
+  "img1": "a-card-1",
+  "img2": "a-card-1",
+  "img3": "a-card-1",
+  "title": "Barrier-free entry",
+  "text": "No thresholds or steps, making entry and exit easier and enough space to maneuver a wheelchair or walker"
+})
 -->
 
-<div class="accecibility-card">content</div>
+<article class="accecibility-card">
+  <div class="embed-responsive embed-responsive--4-3  accecibility-card__img">
+    <picture>
+      <source srcset="img/@@img1.webp" type="image/webp">
+      <img src="img/@@img1.jpg" alt="Text" width="400" height="300" loading="lazy">
+    </picture>
+  </div>
+  <div class="accecibility-card__text">
+    <h3 class="h6  accecibility-card__title">@@title</h3>
+    <p class="accecibility-card__descr">@@text</p>
+  </div>
+</article>
