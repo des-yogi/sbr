@@ -1,9 +1,22 @@
-// В этом файле должны быть стили для БЭМ-блока benefit-card, его элементов, 
-// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
-// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
-
 .benefit-card {
 
   $block-name:                &; // #{$block-name}__element
 
+  &__img {
+    width: 104px;
+    margin: 0 auto 24px;
+
+    img {
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  &__title {
+    margin: 0 0 16px;
+  }
+
+  &__descr {
+    margin: 0;
+  }
 }
