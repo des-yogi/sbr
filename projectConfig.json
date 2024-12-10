@@ -29,12 +29,14 @@
     "free-quote": [],
     "brand-slider": [],
     "copyrights": [],
-    "before-after": []
+    "before-after": [],
+    "faq": []
   },
   "addCssBefore": [
     "../../node_modules/bootstrap/scss/_functions",
     "../../node_modules/bootstrap/scss/_variables",
     "../../node_modules/bootstrap/scss/_mixins",
+    "../../node_modules/bootstrap/scss/_nav",
     "./src/scss/variables.scss",
     "./src/scss/mixins.scss",
     "../../node_modules/swiper/swiper-bundle.css"
