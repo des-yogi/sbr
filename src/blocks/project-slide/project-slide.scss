@@ -13,14 +13,6 @@
     margin-top: 16px;
   }
 
-  &__container {
-
-  }
-
-  &__item {
-
-  }
-
   &__item-row {
     gap: 32px 0;
   }
@@ -41,10 +33,6 @@
     @include col-offset(lg, 0);
     @include col(lg, 6);
     @include col(xl, 6, $grid-columns, 32px);
-  }
-
-  &__item-text {
-
   }
 
   &__item-title {
@@ -70,9 +58,5 @@
       background-size: 24px;
       background-image: svg-load('../blocks/sprite-svg/svg/check-circle.svg', fill=$main-color);
     }
-  }
-
-  &__item-img {
-
   }
 }

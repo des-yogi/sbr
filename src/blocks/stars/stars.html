@@ -1,14 +1,7 @@
 <!--DEV
-
-Для использования этого файла как шаблона:
-
-@ @include('blocks/stars/stars.html')
-
-(Нужно убрать пробел между символами @)
-Подробнее: https://www.npmjs.com/package/gulp-file-include
-
-
-
-<div class="stars">content</div>
-
+@ @include('blocks/stars/stars.html', {
+  "rating": "5"
+})
 -->
+
+<div class="stars" style="--rating: @@rating;" aria-label="Rating of this product is @@rating out of 5."></div>
