@@ -9,12 +9,12 @@
 
   $block-name:                &; // #{$block-name}__element
 
-  .complex-heading__subtitle {
+  // .complex-heading__subtitle {
 
-    @media (min-width: $screen-lg) {
-      display: none;
-    }
-  }
+  //   @media (min-width: $screen-lg) {
+  //     display: none;
+  //   }
+  // }
 
   &__row {
     gap: 32px 0;

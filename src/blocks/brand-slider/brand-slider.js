@@ -4,7 +4,7 @@
     spaceBetween: 32,
     slidesPerView: "auto",
     autoplay: {
-      delay: 4000,
+      delay: 3000,
       pauseOnMouseEnter: true,
     },
     loop: true,

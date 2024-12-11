@@ -257,7 +257,7 @@
         <section class="container  onestop-shop">
 
           @@include('blocks/complex-heading/complex-heading.html', {
-            "title": "Onestopshop",
+            "title": "Onestop Shop",
             "subtitle": "Benefits of One stop shop",
             "intro": ""
           })
@@ -266,7 +266,7 @@
 
             <div class="onestop-shop__text-col">
               <div class="onestop-shop__text">
-                <p class="h2  onestop-shop__title">Benefits of One stop shop</p>
+                <!-- <p class="h2  onestop-shop__title">Benefits of One stop shop</p> -->
                 <p>We invite you to visit our showroom in Yonge-Eglinton, Toronto, where you can explore new concepts and build upon your ideas. Our dedicated renovation experts are here to help you brainstorm, walk you through our design, supply, and build process, and offer recommendations tailored to your specific needs.</p>
                 <p class="onestop-shop__address">
                   <svg width="24" height="24" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#map-pin"></use></svg>
@@ -400,6 +400,44 @@
                 </div>
               </div>
 
+              <div class="swiper-slide  project-slide__item">
+                <div class="row  project-slide__item-row">
+
+                  <div class="project-slide__item-text-col">
+                    <div class="project-slide__item-text">
+                      <h3 class="project-slide__item-title">Project name</h3>
+                      <p>Dorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan.</p>
+                      <ul class="list-nostyled  project-slide__item-list">
+                        <li>Comfortable bench with hidden drain provides enough clearance to enter and clean shower floor look</li>
+                        <li>Curbless shower to easy access even using wheelchair</li>
+                        <li>For rest and relaxation the corner rectangular bench was installed</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="project-slide__item-img-col">
+                    <div class="before-after  before-after-wrapper">
+                      <!-- before image: width starts at 50% but will change depending on where the slider is -->
+                      <div class="before-image-wrapper" style="width: 50%;">
+                        <div class="before-image"
+                             style="background-image: url('img/3-before-big.jpg');"
+                             data-bg="img/3-before-big.jpg"
+                             data-bg-webp="img/3-before-big.webp"></div>
+                      </div>
+
+                      <!-- after image: takes up entire width -->
+                      <div class="after-image"
+                           style="background-image: url('img/3-after-big.jpg');"
+                           data-bg="img/3-after-big.jpg"
+                           data-bg-webp="img/3-after-big.webp"></div>
+
+                      <span class="handle draggable"></span>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
             </div>
 
             <div class="swiper__controls">
@@ -442,39 +480,17 @@
 
                   <div class="swiper-slide  review__slide">
                     <div class="review__content">
-                      <p>"We recently had two bathrooms in our condo fully renovated by Smart Bathrooms, and overall, we're very satisfied with the results. Each of our bathrooms was handled by a different crew, and while both teams brought their own strengths and specialized skills, they both delivered quality work. Like any renovation, there were a few bumps along the way, but Natallia was always on top of things, promptly addressing any concerns and working hard to resolve them. Smart Bathrooms offers a seamless, one-stop renovation experience. Natallia helped guide us through the design process, offering valuable insights and ideas tailored to our needs. From choosing high-quality fixtures and finishes to setting the project timeline, the crews followed her instructions to ensure everything ran smoothly. We would gladly recommend Smart Bathrooms to anyone seeking a reliable renovation team"</p>
+                      <p>"Smart Bathrooms (Natallia) recently renovated (i.e. a gut job) our bathroom in our 100 year old house in central Toronto. My spouse and I couldn't be happier with the result! It's never easy to renovate in an old house, but Natallia's design was excellent and the installation team was great with terrific attention to detail. Plus the job started and finished on time. I can strongly recommend Smart Bathrooms based on our experience."</p>
 
                       <div class="review__footer">
                         <div class="review__author">
                           <div class="embed-responsive embed-responsive--1-1  review__ava">
                             <picture>
-                              <source srcset="img/ava.webp" type="image/webp">
-                              <img src="img/ava.jpg" alt="Author name" width="160" height="160" loading="lazy">
+                              <source srcset="img/dave-ings.webp" type="image/webp">
+                              <img src="img/dave-ings.jpg" alt="Dave Ings" width="160" height="160" loading="lazy">
                             </picture>
                           </div>
-                          <p class="h6  review__name">J. Colins</p>
-                        </div>
-
-                        @@include('blocks/stars/stars.html', {
-                          "rating": "4"
-                        })
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="swiper-slide  review__slide">
-                    <div class="review__content">
-                      <p>"We recently had two bathrooms in our condo fully renovated by Smart Bathrooms, and overall, we're very satisfied with the results. Each of our bathrooms was handled by a different crew, and while both teams brought their own strengths and specialized skills, they both delivered quality work. Like any renovation, there were a few bumps along the way, but Natallia was always on top of things, promptly addressing any concerns and working hard to resolve them. Smart Bathrooms offers a seamless, one-stop renovation experience. Natallia helped guide us through the design process, offering valuable insights and ideas tailored to our needs. From choosing high-quality fixtures and finishes to setting the project timeline, the crews followed her instructions to ensure everything ran smoothly. We would gladly recommend Smart Bathrooms to anyone seeking a reliable renovation team"</p>
-
-                      <div class="review__footer">
-                        <div class="review__author">
-                          <div class="embed-responsive embed-responsive--1-1  review__ava">
-                            <picture>
-                              <source srcset="img/ava.webp" type="image/webp">
-                              <img src="img/ava.jpg" alt="Author name" width="160" height="160" loading="lazy">
-                            </picture>
-                          </div>
-                          <p class="h6  review__name">J. Colins</p>
+                          <p class="h6  review__name">Dave Ings</p>
                         </div>
 
                         @@include('blocks/stars/stars.html', {
@@ -486,17 +502,46 @@
 
                   <div class="swiper-slide  review__slide">
                     <div class="review__content">
-                      <p>"We recently had two bathrooms in our condo fully renovated by Smart Bathrooms, and overall, we're very satisfied with the results. Each of our bathrooms was handled by a different crew, and while both teams brought their own strengths and specialized skills, they both delivered quality work. Like any renovation, there were a few bumps along the way, but Natallia was always on top of things, promptly addressing any concerns and working hard to resolve them. Smart Bathrooms offers a seamless, one-stop renovation experience. Natallia helped guide us through the design process, offering valuable insights and ideas tailored to our needs. From choosing high-quality fixtures and finishes to setting the project timeline, the crews followed her instructions to ensure everything ran smoothly. We would gladly recommend Smart Bathrooms to anyone seeking a reliable renovation team"</p>
+                      <p>"We recently had two bathrooms in our condo fully renovated by Smart Bathrooms, and overall, we're very satisfied with the results. Each of our bathrooms was handled by a different crew, and while both teams brought their own strengths and specialized skills, they both delivered quality work.</p>
+
+                      <p>Like any renovation, there were a few bumps along the way, but Natallia was always on top of things, promptly addressing any concerns and working hard to resolve them. Both bathrooms were completed on time, with no hidden costs or fees, and the final cost was very close to the initial estimate.</p>
+
+                      <p>Smart Bathrooms offers a seamless, one-stop renovation experience. Natallia helped guide us through the design process, offering valuable insights and ideas tailored to our needs. From choosing high-quality fixtures and finishes to setting the project timeline, the crews followed her instructions to ensure everything ran smoothly.</p>
+
+                      <p>We would gladly recommend Smart Bathrooms to anyone seeking a reliable renovation team"</p>
 
                       <div class="review__footer">
                         <div class="review__author">
                           <div class="embed-responsive embed-responsive--1-1  review__ava">
                             <picture>
-                              <source srcset="img/ava.webp" type="image/webp">
-                              <img src="img/ava.jpg" alt="Author name" width="160" height="160" loading="lazy">
+                              <source srcset="img/fernando-and-fredy.webp" type="image/webp">
+                              <img src="img/fernando-and-fredy.jpg" alt="Fernando and Fredy" width="160" height="160" loading="lazy">
                             </picture>
                           </div>
-                          <p class="h6  review__name">J. Colins</p>
+                          <p class="h6  review__name">Fernando and Fredy</p>
+                        </div>
+
+                        @@include('blocks/stars/stars.html', {
+                          "rating": "5"
+                        })
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide  review__slide">
+                    <div class="review__content">
+                      <p>"We were planning a renovation with our contractor, and he recommended Natallia and Smart Bathrooms Renovation as a one-stop-shop. We needed someone experienced and knowledgeable about the Canadian market for plumbing and vanities. We couldn't be happier with the service we received. Natallia assisted us with tile selection, vanity, shower system, and toilet. Everything was delivered before the project started, which was a huge relief and helped us meet our deadline.</p>
+                      <p>I highly recommend this store whether you're looking for a one-stop experience or a single purchase. Their prices are competitive with the market."</p>
+
+                      <div class="review__footer">
+                        <div class="review__author">
+                          <div class="embed-responsive embed-responsive--1-1  review__ava">
+                            <picture>
+                              <source srcset="img/liudmyla-Iatsenko.webp" type="image/webp">
+                              <img src="img/liudmyla-Iatsenko.jpg" alt="Liudmyla Iatsenko" width="160" height="160" loading="lazy">
+                            </picture>
+                          </div>
+                          <p class="h6  review__name">Liudmyla Iatsenko</p>
                         </div>
 
                         @@include('blocks/stars/stars.html', {
@@ -554,42 +599,45 @@
 
                 <div class="tab-pane fade show active" id="tab-1-pane" role="tabpanel" aria-labelledby="tab-1" tabindex="0">
                   <div class="accordion" id="accordionFaq">
+
                     <div class="accordion__item">
                       <h3 class="accordion__header">
                         <button class="accordion__button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-1" aria-expanded="true" aria-controls="collapse-1">
-                          <span class="accordion__title">How can I get a quote for my project?</span>
+                          <span class="accordion__title">Can I get a senior renovation tax credit in Canada for bathroom remodelling?</span>
                           <span class="accordion__icon"><span></span></span>
                         </button>
                       </h3>
                       <div id="collapse-1" class="accordion-collapse collapse show" data-bs-parent="#accordionFaq">
                         <div class="accordion__body">
-                          <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the though the transition does limit overflow.
+                          <p>You can claim up to $50,000 in qualifying expenditures for each qualifying renovation that is completed. The tax credit is 15% of the cost, up to a maximum $7,500 for each claim you are eligible to make.</p>
                         </div>
                       </div>
                     </div>
+
                     <div class="accordion__item">
                       <h3 class="accordion__header">
                         <button class="accordion__button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
-                          <span class="accordion__title">Do I pay by credit card, by cheque, or in cash?</span>
+                          <span class="accordion__title">How to make a senior accessible bathroom within a budget?</span>
                           <span class="accordion__icon"><span></span></span>
                         </button>
                       </h3>
                       <div id="collapse-2" class="accordion-collapse collapse" data-bs-parent="#accordionFaq">
                         <div class="accordion__body">
-                          <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion__body</code>, though the transition does limit overflow.
+                          <p>Opting for a tub-to-shower remodel only (partial renovation) can save you more than half the total renovation cost.</p>
                         </div>
                       </div>
                     </div>
+
                     <div class="accordion__item">
                       <h3 class="accordion__header">
                         <button class="accordion__button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-3" aria-expanded="false" aria-controls="collapse-3">
-                          <span class="accordion__title">I want to know the bathroom renovation cost, what do I need to do?</span>
+                          <span class="accordion__title">How can I make my bathroom more friendly for senior people?</span>
                           <span class="accordion__icon"><span></span></span>
                         </button>
                       </h3>
                       <div id="collapse-3" class="accordion-collapse collapse" data-bs-parent="#accordionFaq">
                         <div class="accordion__body">
-                          <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion__body</code>, though the transition does limit overflow.
+                          <p>A no-step shower and shower bench are the best ways to create friendly showers for seniors and people with limited mobility.</p>
                         </div>
                       </div>
                     </div>
