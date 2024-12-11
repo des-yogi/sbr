@@ -30,7 +30,8 @@
     "brand-slider": [],
     "copyrights": [],
     "before-after": [],
-    "faq": []
+    "faq": [],
+    "article": []
   },
   "addCssBefore": [
     "../../node_modules/bootstrap/scss/_functions",

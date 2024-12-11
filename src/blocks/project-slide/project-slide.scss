@@ -10,7 +10,24 @@
   $block-name:                &; // #{$block-name}__element
 
   .swiper__controls {
-    margin-top: 16px;
+
+    @media (min-width: $screen-lg) {
+      justify-content: initial;
+    }
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    @media (max-width: $screen-lg - 1) {
+      flex-direction: column-reverse;
+    }
+
+    @media (min-width: $screen-lg) {
+      gap: 16px;
+    }
   }
 
   &__item-row {
