@@ -7,6 +7,10 @@
   &__title {
     text-transform: uppercase;
     color: $headline-color;
+
+    &:empty {
+      display: none;
+    }
   }
 
   &__subtitle {

@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Home page</title>
+  <title>Home page of Smart Bathrooms Renovation site</title>
   @@include('_include/page_head.html')
 </head>
 
@@ -29,9 +29,10 @@
 
             <div class="accecibility__col">
               @@include('blocks/accecibility-card/accecibility-card.html', {
-                "img1": "a-card-1",
-                "img2": "a-card-1",
-                "img3": "a-card-1",
+                "img1": "barier-free-entry-desktop",
+                "img2": "barier-free-entry-mobile",
+                "img3": "barier-free-entry-tablet",
+                "img4": "barier-free-entry-big",
                 "title": "Barrier-free entry",
                 "text": "No thresholds or steps, making entry and exit easier and enough space to maneuver a wheelchair or walker"
               })
@@ -39,9 +40,10 @@
 
             <div class="accecibility__col">
               @@include('blocks/accecibility-card/accecibility-card.html', {
-                "img1": "a-card-2",
-                "img2": "a-card-2",
-                "img3": "a-card-2",
+                "img1": "anti-slip-coatings-desktop",
+                "img2": "anti-slip-coatings-mobile",
+                "img3": "anti-slip-coatings-tablet",
+                "img4": "anti-slip-coatings-big",
                 "title": "Anti-slip coatings",
                 "text": "Use of materials that prevent slipping, especially in wet environments"
               })
@@ -49,9 +51,10 @@
 
             <div class="accecibility__col">
               @@include('blocks/accecibility-card/accecibility-card.html', {
-                "img1": "a-card-3",
-                "img2": "a-card-3",
-                "img3": "a-card-3",
+                "img1": "supporting-elements-desktop",
+                "img2": "supporting-elements-mobile",
+                "img3": "supporting-elements-tablet",
+                "img4": "supporting-elements-big",
                 "title": "Supporting elements",
                 "text": "Installing grab bars near toilets, showers and bathtubs for added support"
               })
@@ -59,9 +62,10 @@
 
             <div class="accecibility__col">
               @@include('blocks/accecibility-card/accecibility-card.html', {
-                "img1": "a-card-4",
-                "img2": "a-card-4",
-                "img3": "a-card-4",
+                "img1": "lightweight-installations-desktop",
+                "img2": "lightweight-installations-mobile",
+                "img3": "lightweight-installations-tablet",
+                "img4": "lightweight-installations-big",
                 "title": "Lightweight installations",
                 "text": "Toilets and sinks are located at an optimal and comfortable height for sitting or standing"
               })
@@ -69,9 +73,10 @@
 
             <div class="accecibility__col">
               @@include('blocks/accecibility-card/accecibility-card.html', {
-                "img1": "a-card-5",
-                "img2": "a-card-5",
-                "img3": "a-card-5",
+                "img1": "more-storage-desktop",
+                "img2": "more-storage-mobile",
+                "img3": "more-storage-tablet",
+                "img4": "more-storage-big",
                 "title": "More storage",
                 "text": "Installation of convenient places for storing things and hygiene products"
               })
@@ -79,9 +84,10 @@
 
             <div class="accecibility__col">
               @@include('blocks/accecibility-card/accecibility-card.html', {
-                "img1": "a-card-6",
-                "img2": "a-card-6",
-                "img3": "a-card-6",
+                "img1": "mixers-and-plumbing-desktop",
+                "img2": "mixers-and-plumbing-mobile",
+                "img3": "mixers-and-plumbing-tablet",
+                "img4": "mixers-and-plumbing-big",
                 "title": "Mixers and plumbing control",
                 "text": "User-friendly features such as handles with large levers or touch controls"
               })
@@ -89,9 +95,10 @@
 
             <div class="accecibility__col">
               @@include('blocks/accecibility-card/accecibility-card.html', {
-                "img1": "a-card-7",
-                "img2": "a-card-7",
-                "img3": "a-card-7",
+                "img1": "smart-toilets-desktop",
+                "img2": "smart-toilets-mobile",
+                "img3": "smart-toilets-tablet",
+                "img4": "smart-toilets-big",
                 "title": "SMART Toilets with Bide",
                 "text": "Enhancing hygiene and safety, simplifying daily life for seniors and individuals with disabilities through automation and accessibility"
               })
@@ -99,9 +106,10 @@
 
             <div class="accecibility__col">
               @@include('blocks/accecibility-card/accecibility-card.html', {
-                "img1": "a-card-8",
-                "img2": "a-card-8",
-                "img3": "a-card-8",
+                "img1": "good-lighting-and-contrast-desktop",
+                "img2": "good-lighting-and-contrast-mobile",
+                "img3": "good-lighting-and-contrast-tablet",
+                "img4": "good-lighting-and-contrast-big",
                 "title": "Good lighting and contrast colors",
                 "text": "Good lighting and use of contrasting colors to improve visibility and orientation in space"
               })
@@ -123,8 +131,24 @@
             <div class="about-us__img-col">
               <div class="embed-responsive embed-responsive--4-3  about-us__img">
                 <picture>
-                  <source srcset="img/about-img.webp" type="image/webp">
-                  <img src="img/about-img.jpg" alt="Natallia Pulyanava, Project manager and Founder" width="600" height="450" loading="lazy">
+                  <source srcset="img/about-us-desktop.webp,
+                                  img/about-us-big.webp 2x" media="(min-width: 1280px)" type="image/webp">
+                  <source srcset="img/about-us-desktop.jpg,
+                                  img/about-us-big.jpg 2x" media="(min-width: 1280px)">
+
+                  <source srcset="img/about-us-tablet.webp" media="(min-width: 1024px)" type="image/webp">
+                  <source srcset="img/about-us-tablet.jpg" media="(min-width: 1024px)">
+
+                  <source srcset="img/about-us-big.webp" media="(min-width: 768px)" type="image/webp">
+                  <source srcset="img/about-us-big.jpg" media="(min-width: 768px)">
+
+                  <source srcset="img/about-us-tablet.webp" media="(min-width: 480px)" type="image/webp">
+                  <source srcset="img/about-us-tablet.jpg" media="(min-width: 480px)">
+
+                  <source srcset="img/about-us-mobile.webp" media="(min-width: 320px)" type="image/webp">
+                  <source srcset="img/about-us-mobile.jpg" media="(min-width: 320px)">
+
+                  <img src="img/about-us-big.jpg" alt="Natallia Pulyanava, Project manager and Founder" width="900" height="675" loading="lazy">
                 </picture>
               </div>
             </div>
@@ -315,7 +339,24 @@
                   </div>
 
                   <div class="project-slide__item-img-col">
-                    @@include('blocks/before-after/before-after.html')
+                    <div class="before-after  before-after-wrapper">
+                      <!-- before image: width starts at 50% but will change depending on where the slider is -->
+                      <div class="before-image-wrapper" style="width: 50%;">
+                        <div class="before-image"
+                             style="background-image: url('img/1-before-big.jpg');"
+                             data-bg="img/1-before-big.jpg"
+                             data-bg-webp="img/1-before-big.webp"></div>
+                      </div>
+
+
+                      <!-- after image: takes up entire width -->
+                      <div class="after-image"
+                           style="background-image: url('img/1-after-big.jpg');"
+                           data-bg="img/1-after-big.jpg"
+                           data-bg-webp="img/1-after-big.webp"></div>
+
+                      <span class="handle draggable"></span>
+                    </div>
                   </div>
 
                 </div>
@@ -340,13 +381,18 @@
                     <div class="before-after  before-after-wrapper">
                       <!-- before image: width starts at 50% but will change depending on where the slider is -->
                       <div class="before-image-wrapper" style="width: 50%;">
-                        <div class="before-image" style="background-image: url('img/2-before-big.jpg');"></div>
+                        <div class="before-image"
+                             style="background-image: url('img/2-before-big.jpg');"
+                             data-bg="img/2-before-big.jpg"
+                             data-bg-webp="img/2-before-big.webp"></div>
                       </div>
 
                       <!-- after image: takes up entire width -->
-                      <div class="after-image" style="background-image: url('img/2-after-big.jpg');"></div>
+                      <div class="after-image"
+                           style="background-image: url('img/2-after-big.jpg');"
+                           data-bg="img/2-after-big.jpg"
+                           data-bg-webp="img/2-after-big.webp"></div>
 
-                      <!-- draggable slider with handle -->
                       <span class="handle draggable"></span>
                     </div>
                   </div>
@@ -554,6 +600,120 @@
 
                 <div class="tab-pane fade" id="tab-3-pane" role="tabpanel" aria-labelledby="tab-3" tabindex="0">3...</div>
               </div>
+            </div>
+
+          </div>
+
+        </section>
+
+        <section class="container  free-quote">
+
+          @@include('blocks/complex-heading/complex-heading.html', {
+            "title": "Free quote",
+            "subtitle": "Create comfort for your loved ones",
+            "intro": ""
+          })
+
+          <div class="row  free-quote__row">
+
+            <div class="free-quote__text-col">
+              <div class="free-quote__text">
+                <p>We offer a free visit from our specialist to evaluate your space, understand your needs, and develop the best renovation plan. Our mission is to make your bathroom safe, convenient, and accessible.</p>
+                <p>Submit your request now, and let us help turn your bathroom into a comfortable haven!</p>
+
+                <div class="about-us__controls">
+                  <a href="#" class="btn">
+                    <span>Get a Quote</span>
+                  </a>
+
+                  <a href="tel:+14164817477" class="btn  btn--outline">
+                    <span>Call Us: +1 416-481-7477</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="free-quote__img-col">
+              <div class="embed-responsive embed-responsive--4-3  free-quote__img">
+                <picture>
+                  <source srcset="img/free-quote-desktop.webp,
+                                  img/free-quote-big.webp 2x" media="(min-width: 1280px)" type="image/webp">
+                  <source srcset="img/free-quote-desktop.jpg,
+                                  img/free-quote-big.jpg 2x" media="(min-width: 1280px)">
+
+                  <source srcset="img/free-quote-big.webp" media="(min-width: 768px)" type="image/webp">
+                  <source srcset="img/free-quote-big.jpg" media="(min-width: 768px)">
+
+                  <source srcset="img/free-quote-tablet.webp" media="(min-width: 480px)" type="image/webp">
+                  <source srcset="img/free-quote-tablet.jpg" media="(min-width: 480px)">
+
+                  <source srcset="img/free-quote-mobile.webp" media="(min-width: 320px)" type="image/webp">
+                  <source srcset="img/free-quote-mobile.jpg" media="(min-width: 320px)">
+
+                  <img src="img/free-quote-big.jpg" alt="A picture of a comfortable bathroom" width="900" height="675" loading="lazy">
+                </picture>
+              </div>
+            </div>
+
+          </div>
+
+        </section>
+
+        <section class="brand-slider">
+
+          <div class="container">
+            <h2 class="visually-hidden">Brands we work with</h2>
+
+            @@include('blocks/complex-heading/complex-heading.html', {
+              "title": "",
+              "subtitle": "We work only with high-quality, time-tested brands",
+              "intro": "We offer a free visit from our specialist to evaluate your space, understand your needs"
+            })
+          </div>
+
+          <div class="swiper  brand-slider__container">
+            <div class="swiper-wrapper">
+
+              <div class="swiper-slide  brand-slider__item">
+                <img src="img/baril.svg" alt="Baril logo" width="307" height="56" loading="lazy">
+              </div>
+
+              <div class="swiper-slide  brand-slider__item">
+                <img src="img/toto.svg" alt="TOTO logo" width="250" height="56" loading="lazy">
+              </div>
+
+              <div class="swiper-slide  brand-slider__item">
+                <img src="img/brizo.svg" alt="Brizo logo" width="154" height="56" loading="lazy">
+              </div>
+
+              <div class="swiper-slide  brand-slider__item">
+                <img src="img/riobel.svg" alt="Riobel logo" width="191" height="56" loading="lazy">
+              </div>
+
+              <div class="swiper-slide  brand-slider__item">
+                <img src="img/hansgrohe.svg" alt="Hansgrohe logo" width="354" height="56" loading="lazy">
+              </div>
+
+              <div class="swiper-slide  brand-slider__item">
+                <img src="img/baril.svg" alt="Baril logo" width="307" height="56" loading="lazy">
+              </div>
+
+              <div class="swiper-slide  brand-slider__item">
+                <img src="img/toto.svg" alt="TOTO logo" width="250" height="56" loading="lazy">
+              </div>
+
+              <div class="swiper-slide  brand-slider__item">
+                <img src="img/brizo.svg" alt="Brizo logo" width="154" height="56" loading="lazy">
+              </div>
+
+              <div class="swiper-slide  brand-slider__item">
+                <img src="img/riobel.svg" alt="Riobel logo" width="191" height="56" loading="lazy">
+              </div>
+
+              <div class="swiper-slide  brand-slider__item">
+                <img src="img/hansgrohe.svg" alt="Hansgrohe logo" width="354" height="56" loading="lazy">
+              </div>
+
             </div>
 
           </div>
