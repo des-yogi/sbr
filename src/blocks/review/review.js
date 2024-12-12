@@ -1,8 +1,10 @@
 (function(){
   const review = new Swiper('.review__slider', {
-    speed: 400,
+    speed: 500,
+    autoHeight: true,
     slidesPerView: 1,
-    spaceBetween: 24,
+    spaceBetween: 32,
+    grabCursor: true,
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',

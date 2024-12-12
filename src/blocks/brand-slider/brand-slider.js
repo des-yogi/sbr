@@ -4,7 +4,7 @@
     spaceBetween: 32,
     slidesPerView: "auto",
     autoplay: {
-      delay: 3000,
+      delay: 2500,
       pauseOnMouseEnter: true,
     },
     loop: true,
@@ -17,5 +17,6 @@
         spaceBetween: 64,
       }
     },
+    observer: true,
   });
 }());

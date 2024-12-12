@@ -21,6 +21,12 @@
     @include col(xl, 6, $grid-columns, 32px);
   }
 
+  &__slider {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 32px 0;
+  }
+
   &__intro-title {
     margin-top: 0;
   }
