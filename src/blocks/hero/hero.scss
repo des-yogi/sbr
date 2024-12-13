@@ -3,7 +3,8 @@
   $block-name:                &; // #{$block-name}__element
 
   position: relative;
-  height: 720px;
+  height: 100svh;
+  min-height: 720px;
   padding: 24px 0 52px;
   background-color: $gray-600;
   background-position: center;
