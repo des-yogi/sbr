@@ -31,7 +31,8 @@
     "copyrights": [],
     "before-after": [],
     "faq": [],
-    "article": []
+    "article": [],
+    "tel-btn": []
   },
   "addCssBefore": [
     "../../node_modules/bootstrap/scss/_functions",
